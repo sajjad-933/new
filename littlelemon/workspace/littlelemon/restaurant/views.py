@@ -16,9 +16,8 @@ def index(request):
     return render(request, 'index.html', {})
 
 class bookingview(APIView):
-    
     def get(self, request):
-        items = Booking.object.all()
+        items = Booking.objects.all()
         serializer = BookingSerializer(items, many=True)
         return Response(serializer.data)
     
