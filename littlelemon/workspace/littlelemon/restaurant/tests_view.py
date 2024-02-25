@@ -3,6 +3,7 @@ from .models import MenuItem, Booking
 from rest_framework.test import APIClient
 from rest_framework import status
 from  .serializers import BookingSerializer, MenuItemSerializer
+from django.contrib.auth.models import User
 
 import json
 

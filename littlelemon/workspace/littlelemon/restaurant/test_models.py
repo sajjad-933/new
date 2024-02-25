@@ -1,5 +1,6 @@
 from django.test import TestCase
 from .models import MenuItem, Booking
+from django.contrib.auth.models import User
 
 
 class MenuItemModelTest(TestCase):
